@@ -1,2 +1,2 @@
 # userscripts
-improved browsing experience
+better living through userscripts
