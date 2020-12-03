@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name 4chan highlight highres images
-// @version      0.2
+// @version      0.3
 // @description  Highlights large images.
 // @author       You
 // @icon         
@@ -19,6 +19,7 @@
     const title_regex = /\/hr\//i;
     const regex = /\d+\s[km]b,\s(\d+)\x(\d+)/i;
     const name_regex = /^sample.+/i;
+    const gif_regex = /\.gif/i;
     var lim = regular_lim;
     if(title_regex.test(document.title)) {
       lim = high_lim;
@@ -26,7 +27,7 @@
     let m;
     var el = document.body.querySelectorAll(".file-info");
     el.forEach(function(item) {
-      if ((m = name_regex.exec(item.innerText)) !== null) {
+      if ((m = name_regex.exec(item.innerText)) !== null || (m = gif_regex.exec(item.innerText)) !== null ) {
         item.style.color = "red";
         item.style.textDecoration = "line-through";
       } else {
