@@ -5,6 +5,7 @@
 // @author       You
 // @icon         
 // @match        *://boards.4chan.org/*/thread/*
+// @match        *://boards.4channel.org/*/thread/*
 // @grant        GM_setValue
 // ==/UserScript==
 
@@ -37,4 +38,3 @@
   }
   document.addEventListener('keyup', toggle_prefetch, false);
 })();
-
