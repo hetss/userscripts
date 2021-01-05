@@ -2,8 +2,8 @@
 better living through userscripts
 
 ## 4chan highlight highres images
-Checks the text of a file on a post and alters the css to highlight it based on different properties.
-For example, high resolution images get text highlighted in green, while low(er) resolution ones get their text grayed out.
+Checks the text of a file on a post and alters the css to highlight it based on its properties.
+For example: high resolution images get text highlighted in green while low(er) resolution ones get their text grayed out.
 
 ## 4chan-x custom hotkeys
 Just some keyboard shortcuts for the 4chan X userscript.
